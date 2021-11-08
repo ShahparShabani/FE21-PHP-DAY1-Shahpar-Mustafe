@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import "variables";
+
+body {
+  color: $white;
+  background-color: $gray-800;
+}
+
+#header-container {
+  nav {
+    .myIsActive {
+      font-weight: bolder;
+    }
+  }
+
+  .my-nav-top {
+    color: $white;
+    background-color: $black;
+
+    a {
+      color: $white;
+    }
+  }
+
+  .my-nav-bottom {
+    color: $white;
+    background-color: $gray-600;
+
+    .navbar-toggler {
+      border-color: $amber-500;
+    }
+
+    a {
+      color: $black;
+    }
+  }
+}
+
+#main-container {
+  .container {
+    color: $white !important;
+    background-color: $gray-800 !important;
+  }
+
+  .main-title {
+    text-shadow: 2px 2px 4px #6b2f2f;
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: "Dancing Script", cursive !important;
+  }
+
+  #sort-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    color: $gray-400;
+    line-height: 0.5rem;
+  }
+
+  #sort-btn:focus {
+    /* Remove button outline on focus*/
+    box-shadow: none;
+  }
+
+  .row {
+    color: $white;
+    background-color: $gray-800;
+
+    .my-movie-card-container {
+      .my-movie-card {
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        background-color: $black;
+
+        .my-movie-col-md-5 {
+          background-color: $black;
+        }
+
+        a {
+          text-decoration: none;
+          cursor: pointer;
+          color: $white;
+        }
+
+        span {
+          height: 2rem;
+          width: 2rem;
+          line-height: 2rem;
+          border-radius: 30px;
+          background-color: $amber-a400;
+          color: $black;
+          text-align: center;
+          font-size: 1em;
+          display: inline-block;
+        }
+
+        i {
+          color: $amber-a400;
+        }
+
+        .my-movie-card-body {
+          position: relative;
+          color: $white;
+          background-color: $black;
+          display: flex !important;
+          flex-direction: column !important;
+        }
+
+        .card-text {
+          font-size: 0.875rem;
+        }
+
+        .description-txt {
+          /* Make the description a grow to fill the available space
+          and to place the like-wrapper at the end of the div */
+          flex-grow: 1;
+        }
+
+        img {
+          /* Force img to take entire width of its container for small screens */
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  .modal {
+    color: $gray-600;
+  }
+}
+
+#footer-container {
+  background-color: $amber-a400;
+  color: $white;
+
+  a {
+    text-decoration: none;
+  }
+}

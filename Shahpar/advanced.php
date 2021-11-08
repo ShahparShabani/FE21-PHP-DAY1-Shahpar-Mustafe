@@ -31,11 +31,11 @@ $charactersMulti2 = [
 ];
 
 // Print associative array
-    foreach($charactersAsso2 as $key => $value) {
-      echo "<p><b>Number $key</b></p>";
+    foreach($charactersAsso2 as $x => $v) {
+      echo "<p><b>Number $x</b></p>";
       echo "<ul>";
      
-        echo "<li>".$value."</li>";
+        echo "<li>".$v."</li>";
       
       echo "</ul>";
     }
